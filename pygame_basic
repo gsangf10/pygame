@@ -84,7 +84,7 @@ while wait_exit:
         if event.type == pygame.KEYDOWN:
 #             스페이스바 누르면 대기 종료
             if event.key == pygame.K_SPACE:
-                system_exit = 1
+                wait_exit = False
 #         종료버튼 누를 때 바로 종료
         elif event.type == pygame.QUIT:
             wait_exit = False
